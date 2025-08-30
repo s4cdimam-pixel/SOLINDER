@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const start = () => startSiteTour(steps, {
     storageKey: 'siteTour:v1.4.0', // bumped to force showing again
-    runOnce: false,
+    runOnce: true,
     interactive: true,
     padding: 12,
     locale: { next: 'Next', back: 'Back', finish: 'Finish', skip: 'Skip' },
