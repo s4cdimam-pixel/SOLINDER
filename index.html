@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>SOLINDER</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="onboarding/tour.css" />
+
+  <link rel="icon" href="assets/img/favicon.ico" type="image/png">
+
+</head>
+
+
+
+<body>
+
+  <header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <span class="brand-title">SOLINDER</span>
+    </a>
+
+    <nav class="socials" aria-label="Social links">
+      <a class="icon-btn" href="https://t.me/SOLINDER_app" target="_blank" rel="noopener" aria-label="Telegram">
+        <img src="assets/img/tg-button-new.png" alt="" class="icon-img">
+      </a>
+      <a class="icon-btn" href="https://x.com/EdwardWnaw" target="_blank" rel="noopener" aria-label="Twitter / X">
+        <img src="assets/img/twitter-new-button.png" alt="" class="icon-img">
+      </a>
+      <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="Dexscreener">
+        <img src="assets/img/dexscreener-new.png" alt="" class="icon-img">
+      </a>
+
+      <a class="buy-cta" href="https://jup.ag/tokens/comings_oon" aria-label="Buy">
+        <span class="buy-cta__shine"></span>
+        <span class="buy-cta__label">BUY</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+  
+  <main class="app-main">
+
+   
+    <div id="card-stack" class="card-stack" aria-live="polite"></div>
+
+    
+    <div class="actions">
+      <button id="btn-rewind" class="round-btn ghost" title="Tokenomics">
+        <img src="assets/img/tokenoms.png" alt="tokenomics" class="icon-img ">
+      </button>
+
+      <button id="btn-nope" class="round-btn danger" title="Nope">
+       <img class="icon-img" src="assets/img/no.png" alt="Nope">
+      </button>
+
+      
+
+      <button id="btn-like" class="round-btn success" title="Like">
+        <img src="assets/img/blue-heart.png" alt="Like" class="icon-img">
+      </button>
+
+      <button id="btn-superlike" class="round-btn info " title="Buy">
+        <img src="assets/img/cart-buy-button.png" alt="Buy" class="icon-img pulse-main">
+      </button>
+
+    </div>
+
+    
+    <!-- <div class="contract-bar" role="group" aria-label="Contract address">
+      <span class="contract-label">Contract</span>
+      <input class="addr" value="#" readonly aria-label="Contract address (read-only)" />
+    </div> -->
+
+
+<div class="contract-address"><span class="contract-label">Contract :</span>
+  <span class="ca-value">coming_soon</span>
+  <button class="ca-copy" type="button" aria-label="Copy contract address"><span class="ca-copy-label">COPY</span></button>
+</div>
+
+  <!-- Telegram Invite -->
+  <p class="telegram-invite" role="note">
+    Send your meme characters to our <a href="https://t.me/your_channel" target="_blank" rel="noopener">Telegram</a> channel and maybe we will add them
+  </p>
+
+
+    
+  </main>
+
+  
+  <template id="card-template">
+    <article class="tinder-card">
+      <img class="card-photo" alt="">
+      <div class="badge like">LIKE</div>
+      <div class="badge nope">NOPE</div>
+
+      <div class="card-gradient"></div>
+      <div class="card-info">
+        <h2 class="name"></h2>
+        <div class="meta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z" fill="currentColor"/></svg>
+          <span class="distance"></span>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js" defer></script>
+
+ 
+  <section id="how-to-buy" class="htb hidden" aria-hidden="true">
+        <div class="htb-video-bg" aria-hidden="true">
+      <video class="htb-video" src="assets/video/animated-bg-buy.mp4" autoplay muted loop playsinline></video>
+    </div>
+<div class="htb-backdrop" data-htb-close></div>
+    <div class="htb-modal" role="dialog" aria-modal="true" aria-labelledby="htb-title">
+      <button class="htb-close" title="Close" aria-label="Close" data-htb-close>&times;</button>
+      <h2 id="htb-title">How to Buy</h2>
+      <p class="htb-sub">4 simple steps to purchase our token</p>
+
+      <div class="htb-grid">
+        <article class="htb-card">
+          <div class="step">1</div>
+          <h3>Create a Wallet</h3>
+          <p>Visit <strong>phantom.app</strong> and follow the simple steps to create a new account with the Phantom app or browser extension.</p>
+        </article>
+        <article class="htb-card">
+          <div class="step">2</div>
+          <h3>Get some $SOL</h3>
+          <p>Tap the BUY button <strong>in the app to purchase Solana,</strong> or deposit $SOL to your Phantom wallet from the crypto exchange of your choice.</p>
+        </article>
+        <article class="htb-card">
+          <div class="step">3</div>
+          <h3>Find the token on DEX</h3>
+          <p>Copy <strong>the CA token from the site.</strong> Go to the Jupiter website and find the token using CA</p>
+        </article>
+        <article class="htb-card">
+          <div class="step">4</div>
+          <h3>Swap $SOL for $SOLINDER</h3>
+          <p>Click the SWAP button on the website. After this, sign the transaction in your wallet</p>
+        </article>
+      </div>
+
+      <div class="htb-actions">
+        <a class="btn-buy" href="#" target="_blank" rel="noopener">Buy token</a>
+      </div>
+    </div>
+
+    
+  </section><!-- Tokenomics overlay -->
+  <section id="tokenomics" class="tk hidden" aria-hidden="true">
+    <div class="tk-video-bg" aria-hidden="true">
+      <video class="tk-video" src="assets/video/animated-bg-tokenom.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="tk-backdrop" data-tk-close></div>
+    <div class="tk-modal" role="dialog" aria-modal="true" aria-labelledby="tk-title">
+      <button class="tk-close" title="Закрити" aria-label="Закрити" data-tk-close>&times;</button>
+      <h2 id="tk-title">Tokenomics</h2>
+      <article class="tk-card">
+        <ul class="tk-list">
+          <li><strong>Network:</strong> Solana</li>
+          <li><strong>Supply:</strong> 1,000,000,000 (1B)</li>
+          <li><strong>Fees:</strong> Zero commissions &amp; fees (0% buy/sell/transfer)</li>
+          <li><strong>Liquidity:</strong> 100% locked <em>or</em> 100% LP tokens burnt</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+<!-- <button id="replay-tour" class="icon-btn" title="Replay tour">?</button>
+<script>
+  document.getElementById('replay-tour').addEventListener('click', () => {
+    
+    startSiteTour(window.__tourSteps, {
+      storageKey: 'siteTour:v1.4.0',
+      runOnce: false,
+      interactive: true,
+      padding: 12,
+      locale: { next:'Next', back:'Back', finish:'Finish', skip:'Skip' }
+    });
+  });
+</script> -->
+
+  <script src="onboarding/tour.js"></script>
+  <script src="onboarding/init-tour.js"></script>
+</body>
+</html>
