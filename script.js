@@ -2,24 +2,24 @@
 const profiles = [
   {
     name: "Zoe", age: 21, distance: "5 km away",
-    img: ""
+    img: "./assets/img/foxybeach.PNG"
   },
   {
     name: "Margo", age: 24, distance: "9 km away",
-    img: ""
+    img: "./assets/img/chocolate21.PNG"
   },
   {
     name: "MrFox", age: 22, distance: "2 km away",
-    img: ""
+    img: "./assets/img/mrfox.PNG"
   },
   {
     name: "MrPee", age: 26, distance: "7 km away",
-    img: ""
+    img: "./assets/img/pepe65.PNG"
   },
 
   {
     name: "Leo", age: 26, distance: "22 km away",
-    img: ""
+    img: "./assets/img/skatty24.PNG"
   },
 
   {
